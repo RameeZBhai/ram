@@ -1,0 +1,24 @@
+mkdir user-registration
+cd user-registration
+npm init -y
+npm install express mongoose body-parser
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <form id="registrationForm" action="/register" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
